@@ -1,0 +1,65 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --subdued-color: #777;
+  --text-color: #555;
+  --content-color: #f0f0f3;
+}
+
+body {
+  background-color: #f3f3f3;
+}
+
+.avatar {
+  width: 100%;
+  border-radius: 100%;
+  border: 2px solid white;
+}
+
+.notification-grid {
+  display: grid;
+  /* grid-template-columns: auto 1fr; */
+  grid-template-columns: 50px 1fr;
+  gap: 1rem;
+}
+
+.notification-card {
+  background-color: white;
+  border: 1px solid var(--subdued-color);
+  border-radius: 0.25rem;
+  padding: 0.75rem;
+}
+
+.notification-header {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.notification-title {
+  flex-grow: 1;
+  font-size: 1.1rem;
+}
+
+.notification-time {
+  color: var(--subdued-color);
+}
+
+.notification-content {
+  background-color: var(--content-color);
+  margin-top: 0.5rem;
+  padding: 0.25rem;
+  border-radius: 0.25rem;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+}
+
+.icon > path {
+  fill: var(--subdued-color);
+}
